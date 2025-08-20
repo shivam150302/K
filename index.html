@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Happy Birthday ❤️</title>
+    <link rel="stylesheet" href="style2.css" />
+  </head>
+  <body>
+    <!-- Background Sparkles -->
+    <!-- <div class="stars"></div> -->
+    <!-- <div
+      class="cloud"
+      style="width: 200px; height: 100px; top: 50px; left: -250px"
+    ></div>
+    <div
+      class="cloud"
+      style="
+        width: 150px;
+        height: 70px;
+        top: 150px;
+        left: -300px;
+        animation-delay: 10s;
+      "
+    ></div> -->
+
+    <!-- Floating Petals -->
+    <div class="petal" style="left: 10%; animation-delay: 0s"></div>
+    <div class="petal" style="left: 30%; animation-delay: 3s"></div>
+    <div class="petal" style="left: 50%; animation-delay: 6s"></div>
+    <div class="petal" style="left: 70%; animation-delay: 1s"></div>
+    <div class="petal" style="left: 90%; animation-delay: 5s"></div>
+
+    <!-- Floating Hearts -->
+    <div class="heart-bg" style="left: 15%; animation-delay: 2s"></div>
+    <div class="heart-bg" style="left: 35%; animation-delay: 4s"></div>
+    <div class="heart-bg" style="left: 55%; animation-delay: 6s"></div>
+    <div class="heart-bg" style="left: 75%; animation-delay: 8s"></div>
+    <div class="heart-bg" style="left: 85%; animation-delay: 3s"></div>
+
+    <!-- Hero Section -->
+    <div class="hero">
+      <div class="hero-text">
+        <h3 class="title">🎂 Happy Birthday My Love 🎂</h3>
+        <p class="subtitle">
+          You are the best thing that ever happened to me 💕
+        </p>
+        <a href="memories.html" class="btn">See Our Memories 📸</a>
+      </div>
+      <div class="hero-image">
+        <img src="images/166554.jpg" alt="Us Together" />
+      </div>
+    </div>
+
+    <!-- Floating Balloons -->
+    <div
+      class="balloon"
+      style="left: 10%; background: #ffb6c1; animation-delay: 0s"
+    ></div>
+    <!-- pastel pink -->
+    <div
+      class="balloon"
+      style="left: 30%; background: #add8e6; animation-delay: 2s"
+    ></div>
+    <!-- pastel blue -->
+    <div
+      class="balloon"
+      style="left: 50%; background: #c1e1c1; animation-delay: 4s"
+    ></div>
+    <!-- pastel green -->
+    <div
+      class="balloon"
+      style="left: 70%; background: #ffe4b5; animation-delay: 6s"
+    ></div>
+    <!-- pastel peach -->
+    <div
+      class="balloon"
+      style="left: 90%; background: #dda0dd; animation-delay: 1s"
+    ></div>
+    <!-- pastel purple -->
+
+    <div class="heart" style="left: 20%; animation-delay: 1s"></div>
+    <div class="heart" style="left: 40%; animation-delay: 3s"></div>
+    <div class="heart" style="left: 60%; animation-delay: 5s"></div>
+    <div class="heart" style="left: 80%; animation-delay: 7s"></div>
+  </body>
+</html>
+
+<script>
+  // Fade-in effect for gallery images
+  document.addEventListener("DOMContentLoaded", () => {
+    const images = document.querySelectorAll(".fade-in");
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("visible");
+          }
+        });
+      },
+      { threshold: 0.2 }
+    );
+
+    images.forEach((img) => observer.observe(img));
+  });
+</script>
